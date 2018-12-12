@@ -1,8 +1,12 @@
 'use strict';
 
-function get_union(collection_a, collection_b) {
-  //在这里写入代码
+function getUnion(collectionA, collectionB) {
+  let difference = getDifferenceInSecond(collectionA, collectionB);
+  return collectionA.concat(difference);
 }
 
-module.exports = get_union;
+function getDifferenceInSecond(collectionA, collectionB) {
+  return collectionB.filter(element => collectionA.indexOf(element) === -1 ? true : false);
+}
 
+module.exports = getUnion;
