@@ -1,7 +1,7 @@
 'use strict';
 
-function collect_all_even(collection) {
+function collectAllEven(collection) {
   return collection.filter(element => element % 2 === 0);
 }
 
-module.exports = collect_all_even;
+module.exports = collectAllEven;

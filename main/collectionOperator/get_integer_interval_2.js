@@ -1,20 +1,20 @@
 'use strict';
 let collectAllEven = require('./collect_all_even');
 
-function get_integer_interval_2(number_a, number_b) {
+function getEvenIntegerInterval_2(numberA, numberB) {
   let array = [];
-  if (number_a < number_b) {
-    for (let i = number_a; i <= number_b; i++) {
+  if (numberA < numberB) {
+    for (let i = numberA; i <= numberB; i++) {
       array.push(i);
     }
-  } else if (number_a > number_b) {
-    for (let i = number_a; i >= number_b; i--) {
+  } else if (numberA > numberB) {
+    for (let i = numberA; i >= numberB; i--) {
       array.push(i);
     }
   } else {
-    array.push(number_a);
+    array.push(numberA);
   }
   return collectAllEven(array);
 }
 
-module.exports = get_integer_interval_2;
+module.exports = getEvenIntegerInterval_2;

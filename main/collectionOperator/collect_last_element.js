@@ -1,7 +1,7 @@
 'use strict';
 
-function collect_last_element(collection) {
+function collectLastElement(collection) {
   return collection[collection.length - 1];
 }
 
-module.exports = collect_last_element;
+module.exports = collectLastElement;

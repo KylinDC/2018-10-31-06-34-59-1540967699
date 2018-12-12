@@ -1,19 +1,19 @@
 'use strict';
 
-function get_integer_interval(number_a, number_b) {
+function getIntegerInterval(numberA, numberB) {
   let array = [];
-  if (number_a < number_b) {
-    for (let i = number_a; i <= number_b; i++) {
+  if (numberA < numberB) {
+    for (let i = numberA; i <= numberB; i++) {
       array.push(i);
     }
-  } else if (number_a > number_b) {
-    for (let i = number_a; i >= number_b; i--) {
+  } else if (numberA > numberB) {
+    for (let i = numberA; i >= numberB; i--) {
       array.push(i);
     }
   } else {
-    array.push(number_a);
+    array.push(numberA);
   }
   return array;
 }
 
-module.exports = get_integer_interval;
+module.exports = getIntegerInterval;
