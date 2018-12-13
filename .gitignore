@@ -2,3 +2,5 @@
 node_modules
 *.iml
 *-lock.json
+
+/tmp
