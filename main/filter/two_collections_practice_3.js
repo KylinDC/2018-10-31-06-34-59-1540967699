@@ -1,8 +1,11 @@
 'use strict';
 
 function choose_divisible_integer(collection_a, collection_b) {
+  return collection_a.filter(element => isDivisible(element, collection_b));
+}
 
-  //在这里写入代码
+function isDivisible(number, collection) {
+  return collection.some(element => number % element === 0);
 }
 
 module.exports = choose_divisible_integer;
