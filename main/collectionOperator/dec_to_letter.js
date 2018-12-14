@@ -29,8 +29,8 @@ function dealWithLetter(base26) {
       return base26;
     }
   } else {
-    base26 = base26.substring(0, base26.length - 2) + dealWithLetter(base26.substring(base26.length - 2, base26.length));
-    return dealWithLetter(base26.substring(0, base26.length - 1)) + base26.substring(base26.length - 1, base26.length);
+    base26 = base26.slice(0, -2) + dealWithLetter(base26.slice(-2));
+    return dealWithLetter(base26.slice(0, -1)) + base26.slice(- 1);
   }
 }
 
