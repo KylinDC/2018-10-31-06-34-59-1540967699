@@ -1,7 +1,9 @@
 'use strict';
+let getSum = require('./compute_sum.js');
 
 function compute_average(collection) {
-  //在这里写入代码
+  let sum = getSum(collection);
+  return parseFloat((sum / collection.length).toFixed(1));
 }
 
 module.exports = compute_average;

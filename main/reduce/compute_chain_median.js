@@ -1,7 +1,11 @@
 'use strict';
+let getMedian = require('./compute_median.js');
 
 function compute_chain_median(collection) {
-  //在这里写入代码
+  let chainArray = collection.split('->');
+  chainArray = chainArray.map(element => parseFloat(element));
+  console.log(chainArray);
+  return getMedian(chainArray);
 }
 
 module.exports = compute_chain_median;
