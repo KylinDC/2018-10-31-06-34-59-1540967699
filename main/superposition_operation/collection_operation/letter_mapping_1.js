@@ -1,8 +1,9 @@
 'use strict';
 
 function even_to_letter(collection) {
-
-  //在这里写入代码
+  let dict = '0abcdefghijklmn';
+  let evenArray = collection.filter(x => !(x % 2));
+  return evenArray.map(x => dict[x]);
 }
 
 module.exports = even_to_letter;
