@@ -4,7 +4,7 @@ function count_same_elements(collection) {
   let groupCount = getGroupCount(collection);
   let keyCountArray = [];
   for (let key in groupCount) {
-    keyCountArray = keyCountArray.concat(new keyCount(key, groupCount[key]));
+    keyCountArray.push(keyCount(key, groupCount[key]));
   }
   return keyCountArray;
 }
